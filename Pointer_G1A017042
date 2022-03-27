@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int q = 20;
+    int w = 36;
+    int e = 40;
+
+    int *x1 = &q;
+    int *x2 = &w;
+    int *x3 = &e;
+
+    cout << "q <- 20 = " << q << endl;
+    cout << "w <- 36 = " << w << endl;
+    cout << "e <- 40 = " << e << endl;
+    cout << "x1 <- q = " << x1 << endl;
+    cout << "x2 <- w = " << x2 << endl;
+    cout << "*x1 <- e = " << *x1 << endl;
+    cout << "q <- *x2 = " << q << endl;
+    *x3 = 12;
+    cout << "w <- 6 = " << *x2 << endl;
+    cout << "x3 <- &b = " << x2 << endl;
+    cout << "x3 <- &c = " << x3 << endl;
+    cout << "*x1 <- *x3 = " << *x3 << endl;
+
+    cout <<endl;
+    cout <<"=============================="<<endl;
+    cout <<"Output Finalnya Adalah"<<endl;
+    cout << "nilai q Adalah = " << q <<endl;
+    cout << "nilai w Adalah = " << w <<endl;
+    cout << "nilai e Adalah = " << e <<endl;
+    cout << "nilai x1 Adalah = " << x1 <<endl;
+    cout << "nilai x2 Adalah = " << x2 <<endl;
+    cout << "nilai x3 Adalah = " << x3 <<endl;
+
+
+
+
+
+    cin.get();
+    return 0;
+
+}
